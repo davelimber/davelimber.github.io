@@ -1,3 +1,1 @@
-# resume
-# resume
-# davelimber.github.io
+# Landing Page
