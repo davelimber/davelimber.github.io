@@ -1,134 +1,216 @@
-body{
-    overflow-x: hidden;
-}
-a, a:hover{
-    color: #cc2224;
-}
-.sky{
-    background-image: url('../asset/img/sky.jpg');
-    opacity: 0.5;
-}
-.sidebar{
-    padding: 20px;
-    min-height: 200px;
-    background-color:rgb(10,20,230);opacity:0.8;
-    color: #C7C7C7;
-    padding-left:50px;
-}
-.sidebar-topic{
-  font-family: 'Advent Pro', sans-serif;
-  margin-bottom: 10px;
-  font-size: 35px;
-  color: #cc2224;
-}
-img {
-    display: block;
-    margin: auto;
-}
-.sidebar section{
-    margin-bottom: 90px;
-}
-.red{
-    color: #CC2224;
-}
-.profile-container{
-    padding: 10px;
-    min-height: 225px;
-    margin: auto;
-}
-.profile-image{
-    text-align: center;
-    margin: auto;
-    padding: 10px;
+/* Background(s) */
+
+body {
+	
+	background: white;
 
 }
-.profile-picture{
-    border-radius: 3px;
-    height: 210px;
-    border-radius: 100px;
+
+section {
+	min-height: 100vh;
 }
-.profile-contact{
-    padding-top: 15px;
+
+
+
+/* General Text Styling */
+
+h1, h2, h3, p {
+	font-family: Gill Sans, HelveticaNeue, Helvetica, sans-serif;
 }
-.profile-name{
-    font-weight: 400;
+
+h1 {
+	padding-bottom: 20px;	
+	font-size: 48px;
+	color: black;
 }
-.profile-title{
-    font-weight: 400;
-    letter-spacing: 3px;
+
+p {
+	font-size: 18px;
+	color: black;
 }
-.profile-contact span{
-    margin-right: 10px;
+
+
+
+
+/* Links */
+
+a:hover, a:visited, a:link, a:active {
+	color: #111;
+	text-decoration: none;
 }
-.quote-container{
-    padding: 10px 10px 0 10px;
+
+.dotted-underline {
+	border-bottom: 1px dotted #999;
 }
-.quote i{
-    font-size: 20px;
-    margin-right: 5px;
+
+.dotted-underline:hover {
+	border-bottom: 1px solid #555;
 }
-.container-title{
-  font-weight: 600;
-  font-size: 25px;
-  font-variant: small-caps;
-  background-color: gray;
-  color: #fff;
-  margin-left: -15px;
-  padding-left: 15px;
-  max-width: 250px;
+
+
+
+/* Nav Section */
+
+.navbar {
+	opacity: 0.7;
 }
-.topic{
-    margin: 15px;
-    max-width: 900px;
+
+.navbar {
+	float: right;
 }
-.topic-timeframe{
-    color: #8E8686;
-    font-size: 18px;
-    font-weight: 700;
+
+.navbar li {
+	text-align: right;
+	font-family: GillSans, sans-serif;
+	font-size: 18px;
 }
-.topic-title{
-    font-size: 20px;
-    font-weight: 600;
-    color: #CC2224;
+
+/* Intro Section */
+
+.intro {
+	background-image: url(./sky1.jpg);
+	text-align: center;
+	padding: 22% 15% 0 15%;
+	margin: 50px auto 0 auto;
 }
-.topic-description{
-    margin-left: 10px;
+
+.name {
+	font-size: 72px; 
+	color: black;
 }
-.skills{
-    margin-top: 5px;
+
+.tagline, .city {
+	font-size: 40px;
+	color: black;
 }
-.footer-details{
-    float: right;
-    margin-bottom: 10px;
-    margin-top: 5px;
+
+/* About Section */
+
+.about-text {
+	display: block;
+	color: black;
 }
-.list-group-item{
-    border: none !important;
-    background-color: rgb(10,20,230);opacity:0.8;
+
+.about-text a {
+	color: #aaa;
 }
-@media(max-width: 992px){
-    .container-title{
-      margin: 20px 0;
-    }
-    .profile-container{
-        text-align: center;
-    }
+
+.about-section h1 {
+	color: #aaa;
 }
-.progress{
-    margin-bottom: 1px;
+
+.about-photo {
+	max-height: 250px;
+	margin: auto;
+	margin-bottom: 24px;
+	border-radius: 8%;
 }
-.box {
-    position: relative;
-    top: 1px;
-    left: 100px;
-    height: 100px;
-    width: 100px;
-    border: 1px solid red;
-    background-color: white;
-    opacity: .3;
+
+.about-section {
+	padding: 15% 15% 0 15%;
+
 }
-.bottomborder {
-    border-top: 1px solid red;
-    text-align: center;
-  
+
+/* Portfolio Section */
+
+.thumbnail .caption {
+	text-align: center;
+	color: #111;
+}
+
+.thumbnail .caption p {
+	color: #111;
+}
+
+.thumbnail img {
+	width: 150px;
+	height: 150px;
+	margin-top: 15px;
+}
+
+.portfolio-section {
+	padding: 12% 5% 20% 5%;
+	text-align: center;
+	
+}
+
+.project-link {
+	color: #aaa;
+}
+
+.portfolio-subheading {
+	margin-top: -20px;
+	padding-bottom: 20px;
+	color: #ccc;
+}
+
+
+/* Contact Section */
+
+.fa, .fcc-block {
+	display: block;
+	text-align: center;
+	opacity: 1;
+	color: #111;
+	text-decoration: none;
+	margin-top: 36px;
+}
+
+.fcc-logo {
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	margin: 4px auto;
+	border-radius: 20%;
+}
+
+.fa-twitter-square {
+	color: #00aced;
+}
+
+.fa-linkedin-square {
+	color: #007bb6;
+}
+
+.icon-caption {
+	color: #eee;
+	display: none;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: -20px;
+}
+
+.contact-section {
+	padding: 20% 10% 20% 10%;
+}
+
+.contact-section p {
+	padding-bottom: 20px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 300px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 20;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 300px;
+  background-color: #777;
+
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 50px;
+  left: 125px;
+  min-width: 25%;
+  height: 200px;
 }
