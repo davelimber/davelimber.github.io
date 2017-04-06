@@ -68,7 +68,7 @@ a:hover, a:visited, a:link, a:active {
 /* Intro Section */
 
 .intro {
-	background-image: url(./sky1.jpg);
+	/*background-image: url(./img/sky1.png);*/
 	text-align: center;
 	padding: 22% 15% 0 15%;
 	margin: 50px auto 0 auto;
@@ -188,29 +188,3 @@ a:hover, a:visited, a:link, a:active {
 	padding-bottom: 20px;
 }
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  height: 300px;
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 20;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 300px;
-  background-color: #777;
-
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 50px;
-  left: 125px;
-  min-width: 25%;
-  height: 200px;
-}
